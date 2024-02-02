@@ -1,11 +1,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin: 140px 0 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
     color: #ffffff;
-    padding-top: 60px;
 }
 
 header {
@@ -17,6 +16,9 @@ header {
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, position 0.3s ease-in-out;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
@@ -33,13 +35,17 @@ h1, h2, p, li {
 
 section {
     padding: 30px 20px;
-    margin: 20px;
+    margin: 20px 20px 20px;
     cursor: pointer;
     position: relative;
     background-color: #292929;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease-in-out;
+}
+
+section.first {
+    margin-top: 50px;
 }
 
 section:hover {
@@ -100,7 +106,32 @@ footer {
     }
 }
 
-#habilidades-list {
+#habilidades-list,
+#exp-list,
+#edu-list,
+#contato-list {
     list-style-type: square;
     list-style-position: inside;
+}
+
+a {
+    color: #61dafb;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.header-info h1,
+.header-info p {
+    margin: 0;
 }
