@@ -6,3 +6,15 @@ function toggleSection(sectionId) {
     content.classList.toggle('hidden');
 
 }
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.container img');
+
+function nextSlide() {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.display = 'block';
+}
+
+setInterval(nextSlide, 2000);
+
