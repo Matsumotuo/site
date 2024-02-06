@@ -54,4 +54,66 @@ section {
     background-color: #292929;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    transition:
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section:hover {
+    background-color: #1e1e1e;
+}
+
+h2 {
+    color: #61dafb;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.closed .icon::before {
+    content: '\25B8';
+}
+
+.open .icon::before {
+    content: '\25BE';
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+}
