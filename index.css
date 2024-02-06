@@ -74,7 +74,9 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: flex;
+    position: fixed;
+    bottom: 0; 
+    left: 0;
 }
 
 .hidden {
@@ -135,4 +137,10 @@ a {
 .header-info h1,
 .header-info p {
     margin: 0;
+}
+
+@media (min-height: 100vh) {
+    body {
+        margin-bottom: 50px; 
+    }
 }
