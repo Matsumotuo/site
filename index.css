@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 140px 0 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
@@ -12,6 +12,7 @@ header {
     text-align: center;
     padding: 10px;
     width: 100%;
+    max-width: 1200px;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, position 0.3s ease-in-out;
     position: fixed;
@@ -19,6 +20,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 header h1 {
@@ -34,18 +48,16 @@ h1, h2, p, li {
 }
 
 section {
-    padding: 30px 20px;
-    margin: 20px 20px 20px;
+    padding: 20px;
     cursor: pointer;
     position: relative;
     background-color: #292929;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease-in-out;
-}
-
-section.first {
-    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 section:hover {
@@ -90,7 +102,7 @@ footer {
 
 @media (max-width: 600px) {
     section {
-        margin: 10px;
+        padding: 10px;
     }
 
     header {
@@ -104,34 +116,18 @@ footer {
     header p {
         font-size: 12px;
     }
-}
 
-#habilidades-list,
-#exp-list,
-#edu-list,
-#contato-list {
-    list-style-type: square;
-    list-style-position: inside;
-}
+    .header-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-a {
-    color: #61dafb;
-}
+    .header-info img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-.header-info {
-    display: flex;
-    align-items: center;
-}
-
-.profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.header-info h1,
-.header-info p {
-    margin: 0;
+    .header-info div {
+        text-align: left;
+    }
 }
