@@ -4,4 +4,5 @@ function toggleSection(sectionId) {
     section.classList.toggle('closed');
     var content = section.querySelector('ul') || section.querySelector('p');
     content.classList.toggle('hidden');
+
 }
