@@ -136,7 +136,7 @@ a {
 
 .header-info h1,
 .header-info p {
-    margin: 0;
+    margin: 5px;
 }
 
 @media (min-height: 100vh) {
