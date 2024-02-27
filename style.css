@@ -2,22 +2,21 @@
 
 @media screen and (max-width: 480px) {
     .container .text {
-      font-size: 8vw; 
+        font-size: 8vw;
     }
-  }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;   
+    font-style: normal;
 }
 
-
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -25,23 +24,56 @@ body{
     background-color: #010718;
 }
 
-.container{
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: #ddd;
+}
+
+.container {
     width: 246px;
     overflow: hidden;
 }
 
-.container .text{
+.container .text {
     position: relative;
     color: #4070f4;
     font-size: 30px;
     font-weight: 600;
 }
 
-.container .text.primeiro-text{
+.container .text.primeiro-text {
     color: #fff;
 }
 
-.text.segundo-text:before{
+.text.segundo-text:before {
     content: "";
     position: absolute;
     top: 0;
@@ -53,13 +85,40 @@ body{
     animation: animate 4s steps(12) infinite;
 }
 
-
-
-@keyframes animate{
-    40%, 60%{
+@keyframes animate {
+    40%, 60% {
         left: calc(100% + 4px);
     }
-    100%{
+    100% {
         left: 0%;
     }
 }
+/* Mantendo o código existente e adicionando apenas as alterações necessárias */
+
+.header {
+    background-color: #010718;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.container {
+    width: 246px;
+    overflow: hidden;
+    margin-top: 5vh; 
+}
+
