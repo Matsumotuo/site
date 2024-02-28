@@ -118,7 +118,7 @@ body {
     display: block;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
     .about-col-1 {
         flex-basis: 100%;
         margin-left: 0.4vh;
@@ -127,6 +127,7 @@ body {
     .about-col-1 img {
         width: 80%;
         margin-left: 5vh;
+    
     }
 
     .about-col-2 {
@@ -138,7 +139,7 @@ body {
     }
 
     .tab-links {
-        margin-right: 20px;
+        margin-right: 1vh;
     }
 
     .tab-titles {
