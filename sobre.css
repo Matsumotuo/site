@@ -117,3 +117,29 @@ body {
 .tab-contents.active-tab{
     display: block;
 }
+
+@media only screen and (max-width: 480px) {
+    
+    .text{
+        font-size: 10px;
+    }
+    
+    
+    .about-col-1 {
+        flex-basis: 100%;
+        margin-left: 0.4vh;
+    }
+    
+    .about-col-1 img {
+        margin-left: 0;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+
+    }
+
+    .tab-links {
+        margin-right: 20px;
+    }
+}

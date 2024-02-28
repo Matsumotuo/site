@@ -41,6 +41,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .nav-item {
@@ -93,8 +94,6 @@ body {
         left: 0%;
     }
 }
-/* Mantendo o código existente e adicionando apenas as alterações necessárias */
-
 .header {
     background-color: #010718;
     color: #fff;
