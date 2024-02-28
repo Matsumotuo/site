@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="perfil.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mim!</h1>
+                    <p>
+                        Me chamo João Vitor Matsumoto, tenho 19 anos, natural de Pato Branco, estou mergulhado nos estudos de Análise e Desenvolvimento de Sistemas. Minha paixão pela tecnologia me impulsiona, e me empenho ao máximo para alcançar meus objetivos profissionais. Tenho um olhar voltado para o futuro na área de tecnologia, especialmente interessado em trilhar o caminho de Front-end ou Design UX/UI. Sinto-me confiante e motivado para seguir adiante, ciente de que estou progredindo em um campo repleto de desafios e oportunidades.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habi')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experiencias</p>
+                        <p class="tab-links" onclick="opentab('edu')">Educação</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="habi">
+                        <ul>
+                            <li><span>Java Script</span><br>Conhecimento intermediario em Java Script</li>
+                            <li><span>HTML/CSS</span><br>Conhecimento intermediario em CSS e HTML</li>
+                            <li><span>Pacote Office/Google</span><br>Excel,Word,Sheets e entre outros</li>
+                            <li><span>Metodolias Ágeis</span><br>Scrum, Kanban e Jira</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Cadoro Imoveis</span><br>Estágio em assesória em financiamento</li>
+                            <li><span>Acess Contact Center</span><br>Estágio em call center</li>
+                            <li><span>Contabilizei</span><br>Atuando na area de tecnologia de produto/sustentação</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2022 - Ensino médio</span><br>Colégio Esatdual Professor Elias Abrahão</li>
+                            <li><span>2025 - Ensino Superior</span><br>Analise e Desenvolvimento de Sistemas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
