@@ -118,28 +118,39 @@ body {
     display: block;
 }
 
-@media only screen and (max-width: 480px) {
-    
-    .text{
-        font-size: 10px;
-    }
-    
-    
+@media only screen and (max-width: 780px) {
     .about-col-1 {
         flex-basis: 100%;
         margin-left: 0.4vh;
     }
-    
+
     .about-col-1 img {
-        margin-left: 0;
+        width: 80%;
+        margin-left: 5vh;
     }
 
     .about-col-2 {
         flex-basis: 100%;
+    }
 
+    ul {
+        margin-right: 1vh;
     }
 
     .tab-links {
         margin-right: 20px;
+    }
+
+    .tab-titles {
+        margin-left: 2vh;
+    }
+
+    .sub-title {
+        margin-left: 5vh;
+    }
+
+    .text {
+        margin-left: 1vh;
+        text-align: center;
     }
 }
